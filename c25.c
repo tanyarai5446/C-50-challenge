@@ -2,8 +2,8 @@
 #include <stdio.h>
 #include <string.h>
 int isRotation(const char *str1, const char *str2) {
-    int len1 = strlen(str1);
-    int len2 = strlen(str2);
+    int len1 = strlen(str1);//12
+    int len2 = strlen(str2);//12
 
     // Check if lengths are equal
     if (len1 != len2) {
@@ -11,13 +11,13 @@ int isRotation(const char *str1, const char *str2) {
     }
 
     // Create a new string by concatenating str1 with itself
-    char concat[2 * len1 + 1];
-    strcpy(concat, str1);
-    strcat(concat, str1);
+    char concat[2 * len1 + 1];//size 25
+    strcpy(concat, str1);//concat=waterbottle
+    strcat(concat, str1);//concat=waterbottlewaterbottle
 
     // Check if str2 is a substring of the concatenated string
-    return strstr(concat, str2) != NULL;
-}
+    return strstr(concat, str2) != NULL;//checks if erbottlewat exists inside waterbottlewaterbottle 
+}                                       //if exists then it returns 1 (true)
 int main() {
     const char *str1 = "waterbottle";
     const char *str2 = "erbottlewat";
