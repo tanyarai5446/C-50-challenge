@@ -44,11 +44,13 @@ int main() {
     
     // Print merged arrays
     printf("First Array: ");
-    for (i = 0; i < n1; i++) {
+    for (i = 0; i < n1; i++) 
+    {
         printf("%d ", arr1[i]);
     }
     printf("\nSecond Array: ");
-    for (j = 0; j < n2; j++) {
+    for (j = 0; j < n2; j++) 
+    {
         printf("%d ", arr2[j]);
     }
     
