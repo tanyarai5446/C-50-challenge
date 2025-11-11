@@ -2,7 +2,7 @@
 #include<stdio.h>
 int pairs_of_sum(int a[],int n,int sum)
 {  
-   for(int i=0;i<n;i++)
+    for(int i=0;i<n;i++)
    {
     for(int j=i+1;j<n;j++)
     {
