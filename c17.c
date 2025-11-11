@@ -1,6 +1,7 @@
 // Find intersection of two sorted array
 #include <stdio.h>
-void intersectionOfSortedArrays(int arr1[], int n1, int arr2[], int n2) {
+void intersectionOfSortedArrays(int arr1[], int n1, int arr2[], int n2)
+{
     int i = 0, j = 0;
 
     printf("Intersection elements are:\n");
