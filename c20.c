@@ -15,9 +15,11 @@ int maxProduct(int arr[], int n) {
     int max_ending_here = arr[0];
     int min_ending_here = arr[0];
 
-    for (int i = 1; i < n; i++) {
+    for (int i = 1; i < n; i++)
+    {
         // If current element is negative, swap max and min
-        if (arr[i] < 0) {
+        if (arr[i] < 0) 
+        {
             int temp = max_ending_here;
             max_ending_here = min_ending_here;
             min_ending_here = temp;
