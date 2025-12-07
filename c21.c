@@ -1,10 +1,10 @@
 //Print all permutations of a string
 #include <stdio.h>
-void swap(char *x, char *y) {
+void swap(char *x, char *y) 
+{
     char temp = *x;
     *x = *y;
     *y = temp;
-    
 }
 void permute(char *a, int l, int r) {
     if (l == r) 
