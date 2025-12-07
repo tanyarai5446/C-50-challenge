@@ -3,7 +3,8 @@
 int unioon(int a[],int b[],int n,int m){
     int c[n+m];
     int k=0;
-    for(int i=0;i<n;i++){
+    for(int i=0;i<n;i++)
+    {
         c[k++]=a[i];
     }
     for (int j = 0; j < m; j++) {
