@@ -12,7 +12,7 @@ int main()
   }
   int k=0;
   for(int i=0;i<n;i++)
-{
+  {
     if(a[i]<0)
     {
     
@@ -21,10 +21,9 @@ int main()
     a[k]=temp;
     k++;
     } 
-}
-for(int k=0;k<n;k++)
-{
+  }
+  for(int k=0;k<n;k++)
+  {
     printf("%d\t",a[k]);
-}
-  
+  }
 }
