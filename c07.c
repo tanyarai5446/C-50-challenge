@@ -5,7 +5,8 @@ void rotateByOne(int a[],int n)
     int last = a[n - 1];  // Store the last element
 
     // Shift all elements one position to the right
-    for (int i = n - 1; i > 0; i--) {
+    for (int i = n - 1; i > 0; i--) 
+    {
         a[i] = a[i - 1];
     }
 
