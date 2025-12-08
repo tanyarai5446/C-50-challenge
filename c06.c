@@ -7,25 +7,31 @@ int unioon(int a[],int b[],int n,int m){
     {
         c[k++]=a[i];
     }
-    for (int j = 0; j < m; j++) {
+    for (int j = 0; j < m; j++) 
+    {
         int found = 0;
-        for (int i = 0; i < n; i++) {
-            if (b[j] == a[i]) {
+        for (int i = 0; i < n; i++) 
+        {
+            if (b[j] == a[i]) 
+            {
                 found = 1;
                 break;
             }
         }
-        if (!found) {
+        if (!found) 
+        {
             c[k++] = b[j];
         }
     }
     printf("union:\n");
-    for(int i=0;i<k;i++){
+    for(int i=0;i<k;i++)
+    {
         printf("%d\t",c[i]);
     }
     printf("\n");
 }
-int intersection(int a[],int b[],int n,int m){
+int intersection(int a[],int b[],int n,int m)
+{
     int d[n+m];
     int k=0;
     for(int i=0;i<n;i++){
