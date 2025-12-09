@@ -12,8 +12,10 @@ int main(){
     printf("leaders:%d\t",leader);
     for(int i=n-2;i>=0;i--)
     {
-        if(a[i]>leader){
+        if(a[i]>leader)
+        {
         leader=a[i];
-        printf("%d\t",leader);}
+        printf("%d\t",leader);
+        }
     }
 }
