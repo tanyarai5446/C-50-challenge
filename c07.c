@@ -23,7 +23,6 @@ int main()
     scanf("%d",&a[i]);
   }
   rotateByOne(a,n);
-
     // Print the rotated array
     for (int i = 0; i < n; i++) {
         printf("%d ", a[i]);
