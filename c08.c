@@ -9,7 +9,8 @@ int main()
     {
         scanf("%d",&a[i]);
     }
-    int max_sum = a[0], curr_sum = a[0];
+    int max_sum = a[0];
+    int curr_sum = a[0];
     for(int i=1; i<n; i++)
     {
         if(curr_sum < 0)
