@@ -1,9 +1,11 @@
 //Check if array is sorted and rotated
 #include<stdio.h>
-int checkArrayType(int arr[], int n) {
+int checkArrayType(int arr[], int n) 
+{
     int inc_breaks = 0, dec_breaks = 0;
 
-    for (int i = 0; i < n-1; i++) {
+    for (int i = 0; i < n-1; i++) 
+    {
         if (arr[i] > arr[i+1])
             inc_breaks++;
         else if (arr[i] < arr[i+1])
