@@ -1,4 +1,5 @@
 //Leaders in an array
+// leaders are elements which are not smaller than any  element in its right
 #include<stdio.h>
 int main(){
     int n;
