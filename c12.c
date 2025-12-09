@@ -16,6 +16,7 @@ int main()
     int n=sizeof(a)/sizeof(int);
     int target;
     printf("target: ");
+    printf("Enter target: ");
     scanf("%d",&target);
     printf("%d occured %d times",target,countOcc(a,n,target));
 }
