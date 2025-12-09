@@ -35,7 +35,8 @@ int main()
    }
    int result = checkArrayType(arr, n);
 
-    switch (result) {
+    switch (result) 
+    {
     case 1:
         printf("✅ Array is sorted in increasing order (not rotated)\n");
         break;
@@ -51,9 +52,6 @@ int main()
     default:
         printf("❌ Array is not sorted\n");
 
-
     return 0;
-
-   
-
-}}
+    }
+}
