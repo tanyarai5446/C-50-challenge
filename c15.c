@@ -1,4 +1,4 @@
-//. Missing number in array [1 to n]
+//Missing number in array [1 to n]
 #include<stdio.h>
 int main()
 {
@@ -13,7 +13,6 @@ int main()
     }
     int total=n*(n+1)/2;
     printf("missing element are:%d",total-sum);
-    
 }
 /*
 //for multiple missing elements;
