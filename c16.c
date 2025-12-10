@@ -1,7 +1,8 @@
 // Find duplicate number in array
 #include<stdio.h>
 
-int findDuplicate(int arr[], int size) {
+int findDuplicate(int arr[], int size) 
+{
     int freq[size];
     
     // Initialize frequency array
@@ -20,7 +21,8 @@ int findDuplicate(int arr[], int size) {
     return -1;  // No duplicate found
 }
 
-int main() {
+int main() 
+{
     int nums[] = {3, 1, 4, 2, 5, 3};
     int size = sizeof(nums) / sizeof(nums[0]);
 
