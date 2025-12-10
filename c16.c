@@ -19,7 +19,6 @@ int findDuplicate(int arr[], int size)
         }
         freq[arr[i]] = 1;
     }
-
     return -1;  // No duplicate found
 }
 
