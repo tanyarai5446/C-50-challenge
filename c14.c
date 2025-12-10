@@ -1,6 +1,7 @@
 //Subarray with given sum (Two pointer / Sliding window)
 #include <stdio.h>
-void subarrayWithSum(int arr[], int n, int target) {
+void subarrayWithSum(int arr[], int n, int target) 
+{
     int start = 0, end = 0, curr_sum = 0;
 
     while (end < n) {
@@ -25,7 +26,6 @@ void subarrayWithSum(int arr[], int n, int target) {
 
         end++;
     }
-
     printf("No subarray with sum %d found.\n", target);
 }
 
