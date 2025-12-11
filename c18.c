@@ -1,6 +1,7 @@
 //18. Trapping Rain Water
 #include <stdio.h>
-int trapRainWater(int height[], int n) {
+int trapRainWater(int height[], int n) 
+{
     if (n <= 2) return 0;
 
     int leftMax[n];
@@ -8,16 +9,19 @@ int trapRainWater(int height[], int n) {
     int waterTrapped = 0;
 
     leftMax[0] = height[0];
-    for (int i = 1; i < n; i++) {
+    for (int i = 1; i < n; i++) 
+    {
         leftMax[i] = (height[i] > leftMax[i - 1]) ? height[i] : leftMax[i - 1];
     }
 
     rightMax[n - 1] = height[n - 1];
-    for (int i = n - 2; i >= 0; i--) {
+    for (int i = n - 2; i >= 0; i--) 
+    {
         rightMax[i] = (height[i] > rightMax[i + 1]) ? height[i] : rightMax[i + 1];
     }
 
-    for (int i = 0; i < n; i++) {
+    for (int i = 0; i < n; i++) 
+    {
         waterTrapped += (leftMax[i] < rightMax[i] ? leftMax[i] : rightMax[i]) - height[i];
     }
 
