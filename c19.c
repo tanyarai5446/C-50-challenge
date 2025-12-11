@@ -32,9 +32,12 @@ int main() {
         }
     }
     
-    for (int x = 0; x < n2 - 1; x++) {
-        for (int y = 0; y < n2 - x - 1; y++) {
-            if (arr2[y] > arr2[y + 1]) {
+    for (int x = 0; x < n2 - 1; x++) 
+    {
+        for (int y = 0; y < n2 - x - 1; y++) 
+        {
+            if (arr2[y] > arr2[y + 1]) 
+            {
                 int temp = arr2[y];
                 arr2[y] = arr2[y + 1];
                 arr2[y + 1] = temp;
