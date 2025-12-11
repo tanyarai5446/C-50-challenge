@@ -26,12 +26,10 @@ int main()
 {
     int nums[] = {3, 1, 4, 2, 5, 3};
     int size = sizeof(nums) / sizeof(nums[0]);
-
     int duplicate = findDuplicate(nums, size);
     if (duplicate != -1)
         printf("Duplicate number is: %d\n", duplicate);
     else
         printf("No duplicate found.\n");
-
     return 0;
 }
