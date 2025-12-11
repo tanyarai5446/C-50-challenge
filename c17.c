@@ -5,12 +5,18 @@ void intersectionOfSortedArrays(int arr1[], int n1, int arr2[], int n2)
     int i = 0, j = 0;
 
     printf("Intersection elements are:\n");
-    while (i < n1 && j < n2) {
-        if (arr1[i] < arr2[j]) {
+    while (i < n1 && j < n2) 
+    {
+        if (arr1[i] < arr2[j]) 
+        {
             i++;
-        } else if (arr1[i] > arr2[j]) {
+        } 
+        else if (arr1[i] > arr2[j]) 
+        {
             j++;
-        } else {
+        } 
+        else 
+        {
             printf("%d ", arr1[i]);
             i++;
             j++;
