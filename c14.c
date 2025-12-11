@@ -24,7 +24,6 @@ void subarrayWithSum(int arr[], int n, int target)
             printf("\n");
             return;
         }
-
         end++;
     }
     printf("No subarray with sum %d found.\n", target);
