@@ -6,7 +6,8 @@ void swap(char *x, char *y)
     *x = *y;
     *y = temp;
 }
-void permute(char *a, int l, int r) {
+void permute(char *a, int l, int r) 
+{
     if (l == r) 
     {
         printf("%s\n", a);
