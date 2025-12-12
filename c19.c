@@ -22,9 +22,12 @@ int main() {
     }
     
     // Sort both arrays
-    for (int x = 0; x < n1 - 1; x++) {
-        for (int y = 0; y < n1 - x - 1; y++) {
-            if (arr1[y] > arr1[y + 1]) {
+    for (int x = 0; x < n1 - 1; x++) 
+    {
+        for (int y = 0; y < n1 - x - 1; y++) 
+        {
+            if (arr1[y] > arr1[y + 1]) 
+            {
                 int temp = arr1[y];
                 arr1[y] = arr1[y + 1];
                 arr1[y + 1] = temp;
