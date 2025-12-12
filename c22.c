@@ -33,7 +33,8 @@ char* countAndSay(int n) {
     return result;
 }
 
-int main() {
+int main() 
+{
     int n = 5;
     char* output = countAndSay(n);
     printf("Count and Say term %d: %s\n", n, output);
