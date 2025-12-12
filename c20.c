@@ -12,7 +12,8 @@ int min(int a, int b)
     return (a < b) ? a : b;
 }
 
-int maxProduct(int arr[], int n) {
+int maxProduct(int arr[], int n) 
+{
     int max_so_far = arr[0];
     int max_ending_here = arr[0];
     int min_ending_here = arr[0];
