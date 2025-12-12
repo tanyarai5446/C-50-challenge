@@ -21,7 +21,8 @@ int areAnagrams(const char *str1, const char *str2) {
     }
     return 1; // Anagrams
 }
-int main() {
+int main() 
+{
     const char *str1 = "listen";
     const char *str2 = "silent";
 
