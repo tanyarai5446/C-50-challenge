@@ -2,7 +2,6 @@
 #include <stdio.h>
 #include <stdlib.h>
 #include <string.h>
-
 char* countAndSay(int n) 
 {
     if (n == 1) 
@@ -22,7 +21,8 @@ char* countAndSay(int n)
         char digit = prev[i];
         int count = 0;
 
-        while (i < len && prev[i] == digit) {
+        while (i < len && prev[i] == digit) 
+        {
             count++;
             i++;
         }
