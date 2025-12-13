@@ -1,15 +1,18 @@
 // Check if two strings are anagrams
 #include <stdio.h>
-int areAnagrams(const char *str1, const char *str2) {
+int areAnagrams(const char *str1, const char *str2) 
+{
     int count[256] = {0}; // ASCII character set
 
     // Count characters in str1
-    for (int i = 0; str1[i] != '\0'; i++) {
+    for (int i = 0; str1[i] != '\0'; i++) 
+    {
         count[(unsigned char)str1[i]]++;
     }
 
     // Subtract counts using str2
-    for (int i = 0; str2[i] != '\0'; i++) {
+    for (int i = 0; str2[i] != '\0'; i++) 
+    {
         count[(unsigned char)str2[i]]--;
     }
 
