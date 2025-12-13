@@ -7,7 +7,8 @@ int isRotation(const char *str1, const char *str2)
     int len2 = strlen(str2);//12
 
     // Check if lengths are equal
-    if (len1 != len2) {
+    if (len1 != len2) 
+    {
         return 0; // Not rotations
     }
 
