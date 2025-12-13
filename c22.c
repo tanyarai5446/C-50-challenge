@@ -3,8 +3,10 @@
 #include <stdlib.h>
 #include <string.h>
 
-char* countAndSay(int n) {
-    if (n == 1) {
+char* countAndSay(int n) 
+{
+    if (n == 1) 
+    {
         char* base = (char*)malloc(2);
         strcpy(base, "1");
         return base;
@@ -15,7 +17,8 @@ char* countAndSay(int n) {
     char* result = (char*)malloc(len * 2 + 1); // Safe buffer
     int index = 0;
 
-    for (int i = 0; i < len;) {
+    for (int i = 0; i < len;) 
+    {
         char digit = prev[i];
         int count = 0;
 
