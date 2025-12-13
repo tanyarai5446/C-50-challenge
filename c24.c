@@ -17,8 +17,10 @@ int areAnagrams(const char *str1, const char *str2)
     }
 
     // Check if all counts are zero
-    for (int i = 0; i < 256; i++) {
-        if (count[i] != 0) {
+    for (int i = 0; i < 256; i++) 
+    {
+        if (count[i] != 0) 
+        {
             return 0; // Not anagrams
         }
     }
