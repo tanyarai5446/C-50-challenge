@@ -31,9 +31,12 @@ int main()
     const char *str1 = "listen";
     const char *str2 = "silent";
 
-    if (areAnagrams(str1, str2)) {
+    if (areAnagrams(str1, str2)) 
+    {
         printf("\"%s\" and \"%s\" are anagrams.\n", str1, str2);
-    } else {
+    } 
+    else 
+    {
         printf("\"%s\" and \"%s\" are not anagrams.\n", str1, str2);
     }
     return 0;
