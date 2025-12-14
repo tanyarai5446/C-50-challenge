@@ -1,9 +1,11 @@
 // Implement strstr() (substring search)
 #include<stdio.h>
-char *myStrStr(const char *string, const char *substr) {//cost-> "read only"
+char *myStrStr(const char *string, const char *substr) 
+{   //cost-> "read only"
     if (!*substr) return (char *)string;//(char *)to remove const char temporarily and match expected return type
 
-    for (int i = 0; string[i] != '\0'; i++) {
+    for (int i = 0; string[i] != '\0'; i++) 
+    {
         int j = 0;
         while (substr[j] != '\0' && string[i + j] == substr[j]) 
         {
