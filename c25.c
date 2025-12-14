@@ -25,9 +25,12 @@ int main()
     const char *str1 = "waterbottle";
     const char *str2 = "erbottlewat";
 
-    if (isRotation(str1, str2)) {
+    if (isRotation(str1, str2)) 
+    {
         printf("\"%s\" is a rotation of \"%s\".\n", str2, str1);
-    } else {
+    } 
+    else 
+    {
         printf("\"%s\" is not a rotation of \"%s\".\n", str2, str1);
     }
     return 0;
