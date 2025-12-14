@@ -5,10 +5,12 @@ char *myStrStr(const char *string, const char *substr) {//cost-> "read only"
 
     for (int i = 0; string[i] != '\0'; i++) {
         int j = 0;
-        while (substr[j] != '\0' && string[i + j] == substr[j]) {
+        while (substr[j] != '\0' && string[i + j] == substr[j]) 
+        {
             j++;
         }
-        if (substr[j] == '\0') {
+        if (substr[j] == '\0') 
+        {
             return (char *)(string + i);
         }
     }
@@ -16,7 +18,8 @@ char *myStrStr(const char *string, const char *substr) {//cost-> "read only"
     return NULL;
 }
 
-int main() {
+int main() 
+{
     const char *text = "codecraX mentors juniors";
     const char *search = "mentors";
 
