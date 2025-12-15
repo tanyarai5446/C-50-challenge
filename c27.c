@@ -3,11 +3,10 @@
 #include<string.h>
 #include <stdio.h>
 #include <string.h>
-
 #define MAX_WORDS 10
 #define MAX_LENGTH 100
-
-int main() {
+int main() 
+{
     // Input words
     char words[MAX_WORDS][MAX_LENGTH] = {
                                           "flower",
