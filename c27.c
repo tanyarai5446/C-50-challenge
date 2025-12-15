@@ -24,8 +24,10 @@ int main()
     for (i = 1; i < size; i++) 
     {
         // Compare prefix with current word
-        for (j = 0; j < strlen(prefix); j++) {
-            if (prefix[j] != words[i][j]) {
+        for (j = 0; j < strlen(prefix); j++) 
+        {
+            if (prefix[j] != words[i][j]) 
+            {
                 break; // mismatch found
             }
         }
