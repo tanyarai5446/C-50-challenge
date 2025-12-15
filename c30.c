@@ -13,15 +13,19 @@ bool isPalindrome(char s[], int left, int right) {
     return true;
 }
 
-bool validPalindrome(char s[]) {
+bool validPalindrome(char s[]) 
+{
     int left = 0;
     int right = strlen(s) - 1;
 
     while (left < right) {
-        if (s[left] == s[right]) {
+        if (s[left] == s[right]) 
+        {
             left++;
             right--;
-        } else {
+        } 
+        else 
+        {
             // Try skipping one character from either side
             return isPalindrome(s, left + 1, right) || isPalindrome(s, left, right - 1);
         }
