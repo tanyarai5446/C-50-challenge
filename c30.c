@@ -29,7 +29,8 @@ bool validPalindrome(char s[]) {
     return true;
 }
 
-int main() {
+int main() 
+{
     char s[100];
     printf("Enter string: ");
     scanf("%s", s);
