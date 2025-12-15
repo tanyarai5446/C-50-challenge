@@ -1,10 +1,12 @@
-//Valid Palindrome after removing at most one character
+// Palindrome after removing at most one characterValid
 #include <stdio.h>
 #include <string.h>
 #include <stdbool.h>
 
-bool isPalindrome(char s[], int left, int right) {
-    while (left < right) {
+bool isPalindrome(char s[], int left, int right) 
+{
+    while (left < right) 
+    {
         if (s[left] != s[right])
             return false;
         left++;
