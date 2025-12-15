@@ -38,7 +38,8 @@ int maxProduct(int arr[], int n)
     return max_so_far;
 }
 
-int main() {
+int main() 
+{
     int arr[] = {2, 3, -2, 4};
     int n = sizeof(arr) / sizeof(arr[0]);
 
